@@ -1,4 +1,4 @@
-""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""
 " プラグインのセットアップ
 """"""""""""""""""""""""""""""
 if has('vim_starting')
@@ -21,6 +21,7 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
 " ファイルをtree表示してくれる
 NeoBundle 'scrooloose/nerdtree'
+
 
 " http://blog.remora.cx/2010/12/vim-ref-with-unite.html
 """""""""""""""""""""""""""""
@@ -49,6 +50,9 @@ au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 """"""""""""""""""""""""""""""
 
+
+""""""""""""""""""""""""""""""
+" 色の設定 :Unite colorscheme -auto-previewでプレビューできる
 """"""""""""""""""""""""""""""
 " solarized
 NeoBundle 'altercation/vim-colors-solarized'
@@ -59,9 +63,66 @@ NeoBundle 'nanotech/jellybeans.vim'
 " molokai
 NeoBundle 'tomasr/molokai'
 
-NeoBundle 'Shougo/unite.vim'
 NeoBundle 'ujihisa/unite-colorscheme'
+" デフォルト設定
+colorscheme desert
+if &term =~ "xterm-256color" || "screen-256color"
+  set t_Co=256
+  set t_Sf=[3%dm
+  set t_Sb=[4%dm
+elseif &term =~ "xterm-color"
+  set t_Co=8
+  set t_Sf=[3%dm
+  set t_Sb=[4%dm
+endif
+
+syntax enable
+hi PmenuSel cterm=reverse ctermfg=33 ctermbg=222 gui=reverse guifg=#3399ff guibg=#f0e68c
 """"""""""""""""""""""""""""""
+
+
+""""""""""""""""""""""""""""""
+" 画面分割・タブページ(http://qiita.com/tekkoc/items/98adcadfa4bdc8b5a6ca)
+""""""""""""""""""""""""""""""
+NeoBundle 'kana/vim-submode'
+
+nnoremap s <Nop>
+nnoremap sj <C-w>j
+nnoremap sk <C-w>k
+nnoremap sl <C-w>l
+nnoremap sh <C-w>h
+nnoremap sJ <C-w>J
+nnoremap sK <C-w>K
+nnoremap sL <C-w>L
+nnoremap sH <C-w>H
+nnoremap sn gt
+nnoremap sp gT
+nnoremap sr <C-w>r
+nnoremap s= <C-w>=
+nnoremap sw <C-w>w
+nnoremap so <C-w>_<C-w>|
+nnoremap sO <C-w>=
+nnoremap sN :<C-u>bn<CR>
+nnoremap sP :<C-u>bp<CR>
+nnoremap st :<C-u>tabnew<CR>
+nnoremap sT :<C-u>Unite tab<CR>
+nnoremap ss :<C-u>sp<CR>
+nnoremap sv :<C-u>vs<CR>
+nnoremap sq :<C-u>q<CR>
+nnoremap sQ :<C-u>bd<CR>
+nnoremap sb :<C-u>Unite buffer_tab -buffer-name=file<CR>
+nnoremap sB :<C-u>Unite buffer -buffer-name=file<CR>
+
+call submode#enter_with('bufmove', 'n', '', 's>', '<C-w>>')
+call submode#enter_with('bufmove', 'n', '', 's<', '<C-w><')
+call submode#enter_with('bufmove', 'n', '', 's+', '<C-w>+')
+call submode#enter_with('bufmove', 'n', '', 's-', '<C-w>-')
+call submode#map('bufmove', 'n', '', '>', '<C-w>>')
+call submode#map('bufmove', 'n', '', '<', '<C-w><')
+call submode#map('bufmove', 'n', '', '+', '<C-w>+')
+call submode#map('bufmove', 'n', '', '-', '<C-w>-')
+""""""""""""""""""""""""""""""
+
 
 call neobundle#end()
 
