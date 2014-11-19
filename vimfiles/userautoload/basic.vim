@@ -29,9 +29,9 @@ set cmdheight=2
 " エディタウィンドウの末尾から2行目にステータスラインを常時表示させる
 set laststatus=2
 " ステータス行に表示させる情報の指定(どこからかコピペしたので細かい意味はわかっていない)
-set statusline=%<%f\%m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
+"set statusline=%<%f\%m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 " ステータス行に現在のgitブランチを表示する
-set statusline+=%{fugitive#statusline()}
+"set statusline+=%{fugitive#statusline()}
 " ウインドウのタイトルバーにファイルのパス情報等を表示する
 set title
 " コマンドラインモードで<Tab>キーによるファイル名補完を有効にする
@@ -39,10 +39,10 @@ set wildmenu
 " 入力中のコマンドを表示する
 set showcmd
 " バックアップディレクトリの指定(でもバックアップは使ってない)
-set backupdir=$HOME/.vimbackup
+"set backupdir=$HOME/.vimbackup
 "
 " バッファで開いているファイルのディレクトリでエクスクローラを開始する(でもエクスプローラって使ってない)
-set browsedir=buffer
+"set browsedir=buffer
 " 小文字のみで検索したときに大文字小文字を無視する
 set smartcase
 " 検索結果をハイライト表示する
