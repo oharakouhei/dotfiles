@@ -78,9 +78,13 @@ set whichwrap=b,s,h,l,<,>,[,]
 " 構文毎に文字色を変化させる
 syntax on
 " カラースキーマの指定
-colorscheme desert
+"colorscheme desert
 " 行番号の色
 highlight LineNr ctermfg=darkyellow
+" カレント行に下線を入れる。
+set cursorline
+" カレント行下線の色。
+highlight CursorLine cterm=underline ctermfg=white ctermbg=white
 """"""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""
