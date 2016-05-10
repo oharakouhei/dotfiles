@@ -6,7 +6,6 @@
 
 
 #""""""""""" manage .vimrc by Git """""""""""
-git clone git@github.com:oharakouhei/dotfiles.git
 ln -fs ~/dotfiles/_vimrc ~/.vimrc
 ln -fs ~/dotfiles/_gvimrc ~/.gvimrc
 
