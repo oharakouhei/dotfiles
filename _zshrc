@@ -49,9 +49,12 @@ setopt hist_verify
 setopt numeric_glob_sort
 # 出力時8ビットを通す
 setopt print_eight_bit
-# ヒストリを共有
+# 同時に起動したzshの間でヒストリを共有
 setopt share_history
-
+# 同じコマンドをヒストリに残さない
+setopt hist_ignore_all_dups
+# ヒストリファイルに保存するとき、すでに重複したコマンドがあったら古い方を削除する
+setopt hist_save_nodups
 
 # ディレクトリ名だけで cd
 setopt auto_cd
