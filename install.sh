@@ -1,13 +1,6 @@
-#""""""""""""""""""""""""""""""
-
-#How to set up Vim environment
-
-#""""""""""""""""""""""""""""""
-
-
-#""""""""""" manage .vimrc by Git """""""""""
 ln -fs ~/dotfiles/_vimrc ~/.vimrc
 ln -fs ~/dotfiles/_gvimrc ~/.gvimrc
+ln -fs ~/dotfiles/_zshrc ~/.zshrc
 
 
 #"""""""""""" NeoBundle """""""""""""

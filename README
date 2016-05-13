@@ -1,15 +1,11 @@
-""""""""""""""""""""""""""""""
+## About Repository
+Dotfiles, setting files like .vimrc, .zshrc, ...
 
-How to set up Vim environment
-
-""""""""""""""""""""""""""""""
-
-
-""""""""""" manage .vimrc by Git """""""""""
+## How to install
+```
 $ cd
 $ git clone git@github.com:oharakouhei/dotfiles.git
 $ sh ./dotfiles/install.sh
-
-"""""""""" install plugins by refering to ~/dotfiles/_vimrc """"""""""""""
-$ vi
+$ vi # install plugins by refering to ~/dotfiles/_vimrc
 and some sentences will be appeared. so, input "y(es)".
+```
