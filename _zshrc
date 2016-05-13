@@ -155,8 +155,6 @@ export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:$PATH
 export MANPATH=$MANPATH:/opt/local/share/man
 # export LSCOLORS=gxfxxxxxcxxxxxxxxxxxxx
 
-#alias ls='ls'
-
 ##############################################
 #ZSH Color Setting File
 #This file is written using [http://ho-ki-boshi.blogspot.com/2007/12/zsh.html]
@@ -178,23 +176,16 @@ PROMPT2="%{${fg[blue]}%}[%n]%{${reset_color}%}>"
 #local DEFAULT=$'%{\e[1;m}'
 #PROMPT=$'\n'$GREEEN'${USER}@${HOSTNAME} '$YELLOW' %~ '$'\n'$DEFAULT'%(!.#.$) '
 
-#Editted by jincun108 (Tomoshi IMAMURA)
-#This is for start-up settings
-#and can be modified by others.
-alias minicom="LANG=C minicom"
-#echo "Hello World"; echo "You've got NO time to sleep, you know? Anyway, Let's get started."
+
+############################################
+# エイリアス
 alias ls="ls -G -B"
 alias f="firefox"
-alias e="emacs"
-alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
-alias ec="emacsclient"
-alias -g NL='/dev/null'
 alias l="ls"
 alias sl="ls"
 alias v="vim"
 alias c="clear"
 alias st="sublime"
-#alias sshut="sshfs g140417@un001.ecc.u-tokyo.ac.jp:/home07/g140417 ~/eccs"
 alias less="less -R"
 alias sfproject="/Applications/MAMP/htdocs/sfproject"
 alias railsprojects="/Applications/MAMP/htdocs/railsprojects"
@@ -202,9 +193,8 @@ alias cakeprojects="/Applications/MAMP/htdocs/cakeprojects"
 alias revelprojects="/Users/kohei/go/src/github.com/revelprojects"
 alias be="bundle exec"
 alias rstudio="/opt/homebrew-cask/Caskroom/rstudio/0.99.486/RStudio.app/Contents/MacOS/RStudio"
+alias xopen='open -a /Applications/Xcode.app'
 
-#For executing mikutter
-alias mikutter="ruby1.9.3 ~/mikutter/mikutter.rb"
 ####################
 
 
@@ -215,8 +205,6 @@ export PATH=$PATH:$ANDROID_SDK_HOME/platform-tools
 
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' '+m:{A-Z}={a-z}'
 
-# xcode open command
-alias xopen='open -a /Applications/Xcode.app'
 
 export PATH=$PATH:/Applications/MAMP/Library/bin
 export PATH=$PATH:/usr/local/lib/node_modules/
