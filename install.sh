@@ -1,6 +1,7 @@
 ln -fs ~/dotfiles/_vimrc ~/.vimrc
 ln -fs ~/dotfiles/_gvimrc ~/.gvimrc
 ln -fs ~/dotfiles/_zshrc ~/.zshrc
+ln -fs ~/dotfiles/_tmux.conf ~/.tmux.conf
 
 
 #"""""""""""" NeoBundle """""""""""""
