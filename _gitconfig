@@ -62,5 +62,7 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [user]
-	name = KoheiOhara
-  email = gofue0723@gmail.com
+	name = OharaKohei
+	email = gofue0723@gmail.com
+[commit]
+	template = /Users/kohei/.stCommitMsg
