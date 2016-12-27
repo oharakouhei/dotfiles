@@ -87,15 +87,6 @@ set cursorline
 highlight CursorLine cterm=underline ctermfg=white ctermbg=white
 """"""""""""""""""""""""""""""
 
-""""""""""""""""""""""""""""""
-" 自動的に閉じ括弧を入力
-""""""""""""""""""""""""""""""
-imap { {}<LEFT>
-imap [ []<LEFT>
-imap ( ()<LEFT>
-""""""""""""""""""""""""""""""
-
-
 " http://inari.hatenablog.com/entry/2014/05/05/231307
 """"""""""""""""""""""""""""""
 " 全角スペースの表示

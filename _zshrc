@@ -194,8 +194,9 @@ export PATH=$PATH:/Applications/SWI-Prolog.app/Contents/MacOS
 export PATH=$PATH:/Applications/MAMP/bin/php/php5.3.28/bin
 export PATH=$HOME/.pyenv/shims:$PATH
 
+# TeX
 #PATH=/usr/local/bin:/usr/local/sbin:$PATH
-PATH=/usr/local/texlive/2014/bin/x86_64-darwin:$PATH
+PATH=/usr/local/texlive/2016/bin/x86_64-darwin:$PATH
 PATH=/bin:$PATH #必要か不明
 PATH=cation:$PATH
 

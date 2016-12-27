@@ -30,6 +30,8 @@ NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'scrooloose/nerdtree'
 " タブ・画面分割
 NeoBundle 'kana/vim-submode'
+" 括弧を自動的に閉じてくれるやつ。なお閉じ括弧は入力しても２重にならない素敵仕様
+NeoBundle 'Townk/vim-autoclose'
 
 "" 色
 " solarized
