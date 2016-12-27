@@ -1,3 +1,5 @@
+alias dev="scl enable devtoolset-2 bash"                                                                                                                                                                       
+export PATH=$HOME/local/bin:"$PATH" 
 ############################################
 # 基本設定
 

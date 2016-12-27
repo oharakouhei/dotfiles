@@ -64,3 +64,5 @@
 [user]
 	name = KoheiOhara
   email = gofue0723@gmail.com
+[url "git://"]
+	insteadOf = https://
