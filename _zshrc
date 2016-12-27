@@ -153,6 +153,7 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 ############################################
 # エイリアス
 alias ls="ls -G -B"
+alias ll="ls -lh"
 alias f="firefox"
 alias l="ls"
 alias sl="ls"
@@ -167,10 +168,12 @@ alias revelprojects="/Users/kohei/go/src/github.com/revelprojects"
 alias be="bundle exec"
 alias rstudio="/opt/homebrew-cask/Caskroom/rstudio/0.99.486/RStudio.app/Contents/MacOS/RStudio"
 alias xopen='open -a /Applications/Xcode.app'
-
+# for tmux
+alias ssh='TERM=xterm ssh'
 
 ############################################
 # 環境変数
+export PATH=/usr/local/bin:/usr/bin:/bin:$PATH
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
@@ -189,7 +192,7 @@ export PATH=$PATH:/Applications/SWI-Prolog.app/Contents/MacOS
 export PATH=$PATH:/Applications/MAMP/bin/php/php5.3.28/bin
 export PATH=$HOME/.pyenv/shims:$PATH
 
-PATH=/usr/local/bin:/usr/local/sbin:$PATH
+#PATH=/usr/local/bin:/usr/local/sbin:$PATH
 PATH=/usr/local/texlive/2014/bin/x86_64-darwin:$PATH
 PATH=/bin:$PATH #必要か不明
 PATH=cation:$PATH
@@ -202,4 +205,9 @@ export GOROOT=`go env GOROOT`
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 # added by Miniconda2 4.0.5 installer
-export PATH="/Users/kohei/miniconda2/bin:$PATH"
+#export PATH="/Users/kohei/miniconda2/bin:$PATH"
+export PYENV_ROOT="${HOME}/.pyenv"
+export PATH=${PYENV_ROOT}/bin:$PATH
+eval "$(pyenv init -)"
+export JUPYTER_ROOT="${HOME}/.pyenv/shims"
+export PATH=${PYENV_ROOT}/bin:$PATH

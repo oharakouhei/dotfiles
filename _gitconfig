@@ -66,3 +66,5 @@
   email = gofue0723@gmail.com
 [url "git://"]
 	insteadOf = https://
+[commit]
+	template = /Users/kohei/.stCommitMsg
