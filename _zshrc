@@ -152,7 +152,7 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 ############################################
 # エイリアス
-alias ls="ls -G -B"
+alias ls="ls -G -B --color=auto"
 alias ll="ls -lh"
 alias f="firefox"
 alias l="ls"
