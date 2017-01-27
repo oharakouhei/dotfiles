@@ -152,10 +152,20 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 ############################################
 # エイリアス
-alias ls="ls -G -B --color=auto"
-alias ll="ls -lh"
-alias f="firefox"
+case "${OSTYPE}" in
+darwin*)
+  alias ls="ls -GB"
+  alias ll="ls -lhGB"
+  alias la="ls -laGB"
+  ;;
+linux*)
+  alias ls='ls --color=auto'
+  alias ll='ls -lh --color=auto'
+  alias la='ls -la --color=auto'
+  ;;
+esac
 alias l="ls"
+alias f="firefox"
 alias sl="ls"
 alias v="vim"
 alias vi="vim"
